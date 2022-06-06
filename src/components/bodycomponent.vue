@@ -24,12 +24,11 @@
             data-toggle="modal"
             data-target="#exampleModalLong"
           >
-            Add Student
+            Add Students
           </button>
 
           <!-- Modal -->
           <div
-            v-if="modalVisible"
             class="modal fade"
             id="exampleModalLong"
             tabindex="-1"
@@ -39,16 +38,6 @@
           >
             <div class="modal-dialog" role="document">
               <div class="modal-content">
-                <div class="modal-header">
-                  <button
-                    type="button"
-                    class="close"
-                    data-dismiss="modal"
-                    aria-label="Close"
-                  >
-                    <span aria-hidden="true">&times;</span>
-                  </button>
-                </div>
                 <div class="modal-body">
                   <form>
                     <div class="form-group mb-2">
@@ -99,7 +88,6 @@ import students from "./students.js";
 export default {
   data() {
     return {
-      modalVisible: true,
       students: students,
       name: "",
       city: "",
